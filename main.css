@@ -11,14 +11,14 @@ body{
 	background: url('headerbackground2.jpg') no-repeat;
 	background-position: bottom;
 	background-size: cover;
-	padding-bottom: 40rem;
+	height: 750px;
 
 	display: block;
-	-webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
+	-webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
 }
 .header{
 	position: fixed;
@@ -30,9 +30,10 @@ body{
 
 }
 
-.header a{
+.header h1 a{
 	font-size: 5rem;
 	color: #464f54;
+
 }
 .header h3{
 	color: 	#69666b;
@@ -40,5 +41,20 @@ body{
 	font-style: italic;
 }
 .header #tom{
-	color: #464f54;
+	color: #1f3c40;
+}
+.navbar-wrapper{
+	margin-top: 50px;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-nav a:first-child{
+	margin-left: 0px;
+}
+.navbar .navbar-nav a{
+	margin-left: 40px;
+	color: #f6f8f8;
 }
