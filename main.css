@@ -1,3 +1,44 @@
+body{
+	font-size: 16px;
+	font-family: 'Raleway', 'Arial';
+}
+.background-image{
+	position: fixed;
+	left: 0;
+  	right: 0;
+  	z-index: 1;
+
+	background: url('headerbackground2.jpg') no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding-bottom: 40rem;
+
+	display: block;
+	-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
 .header{
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	right: 0;
 	text-align: center;
+	padding-bottom: 40rem;
+
+}
+
+.header a{
+	font-size: 5rem;
+	color: #464f54;
+}
+.header h3{
+	color: 	#69666b;
+	font-size: 3.5rem;
+	font-style: italic;
+}
+.header #tom{
+	color: #464f54;
 }
