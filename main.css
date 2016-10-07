@@ -31,13 +31,13 @@ body{
 }
 
 .header h1 a{
-	font-size: 5rem;
+	font-size: 6rem;
 	color: #464f54;
 
 }
 .header h3{
 	color: 	#69666b;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-style: italic;
 }
 .header #tom{
