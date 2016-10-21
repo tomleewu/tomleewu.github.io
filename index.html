@@ -11,29 +11,45 @@
 		<!-- External CSS -->
 		<link rel="stylesheet" href="main.css">
 		<!-- jQuery -->
-		<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 		<script rel="script" src="main.js"></script>
 
 	</head>
 	<body>
-
-		<div class="background-image"></div>
-		<div class="container-fluid header">
-			<h1><a href="">Welcome!</a></h1>
-			<h3>My name is <span id="tom">Tom.</span></h3>
-			<div class="navbar-wrapper">
-				<nav class="navbar">
-		
-					<div class="nav navbar-nav">
-						<a href="">Home</a>
-						<a href="">About</a>
-						<a href="">Projects</a>
-						<a href="/Resume.pdf">Resume</a>
+		<div class="page-container">
+			<div class="background-image-header">
+			<div class="header">
+				<h1><a href="">Welcome!</a></h1>
+				<h3>My name is <span id="tom">Tom.</span></h3>
+					<div class="navbar-wrapper">
+						<nav class="navbar">
+				
+							<div class="nav navbar-nav">
+								<a href="">Home</a>
+								<a href="#about">About</a>
+								<a href="#projects">Projects</a>
+								<a href="Resume.pdf">Resume</a>
+							</div>
+						</nav>
 					</div>
-				</nav>
+			</div>
 			</div>
 		</div>
+		<div class="page-container">
+			<div class="background-image-about">
+				<div class="container aboutContainer" id="about">
+					<h1>About me!</h1>
 
+				</div>
+			</div>
+		</div>
+		<div class="page-container" id="projects">
+			<div class="background-image-project">
+			<div class="container">
+				<h1>My Projects</h1>
+			</div>
+			</div>
+		</div>
 
 	</body>
 </html>
