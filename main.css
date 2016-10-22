@@ -14,26 +14,45 @@ body{
 /**{
 	border: 1px solid black;
 }*/
+
+.white-text{
+	color: #f6f8f8;
+}
+
 .page-container{
 	height: 50% !important;
 	width: 100% !important;
 }
+
 .background-image-project{
+	position: absolute;
 	width: 100%;
     height: 100%;
-    background-image: url("coffee.jpg");
+    background: linear-gradient(
+    	rgba(255,255,255,0),
+    	rgba(0,0,0,.69)
+    	),
+    url("boat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .background-image-about{
+	position:absolute;
 	width: 100%;
     height: 100%;
-    background-image: url("rocks.jpg");
+    background: 
+    	linear-gradient(rgba(0,0,0,.69),
+    		rgba(255,255,255,0)
+    		
+    		),
+    	url("coffee.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
 }
+
 .background-image-header{
     width: 100%;
     height: 100%;
@@ -41,6 +60,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
 }​
 
 .header{
@@ -82,4 +102,37 @@ body{
 	color: #f6f8f8;
 }
 
+ /* About me page! */
+.aboutContainer{
+	position: absolute;
+}
+.aboutContainer h1{
+	font-size: 5rem;
+	margin-bottom: 0px;
+}
+.aboutContainer ul{
+	margin-top: 50px;
+	line-height: 2.5;
+	font-size: 2rem;
+}
 
+
+.round-image{
+	border-radius: 100px;
+	border: 5px solid #ccccd8;
+	margin-top: -8rem;
+
+}
+.inline{
+	display: inline-block;
+
+}
+
+/* Project page! */
+		
+.projectContainer{
+	position: absolute;
+}
+.projectContainer h1{
+	font-size: 5rem;
+}
