@@ -108,24 +108,19 @@ body{
 }
 .aboutContainer h1{
 	font-size: 5rem;
-	margin-bottom: 0px;
+	margin: 50px 50px 50px 10px;
 }
 .aboutContainer ul{
-	margin-top: 50px;
-	line-height: 2.5;
+	line-height: 2;
 	font-size: 2rem;
+	margin-top: 10px;
 }
-
-
+.aboutContainer ul a{
+	color: #B0B2A6;
+}
 .round-image{
 	border-radius: 100px;
 	border: 5px solid #ccccd8;
-	margin-top: -8rem;
-
-}
-.inline{
-	display: inline-block;
-
 }
 
 /* Project page! */
