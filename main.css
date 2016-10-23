@@ -29,20 +29,22 @@ body{
 	width: 100%;
     height: 100%;
     background: linear-gradient(
-    	rgba(255,255,255,0),
-    	rgba(0,0,0,.69)
+    	rgba(255,255,255,.125),
+    	rgba(0,0,0,.5)
+    	
+    	
     	),
-    url("boat.jpg");
+    url("cans.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 100% 0%;
 }
 .background-image-about{
 	position:absolute;
 	width: 100%;
     height: 100%;
     background: 
-    	linear-gradient(rgba(0,0,0,.69),
+    	linear-gradient(rgba(0,0,0,.75),
     		rgba(255,255,255,0)
     		
     		),
@@ -59,7 +61,7 @@ body{
     background: url("headerbackground-min.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 55%;
 
 }​
 
@@ -72,13 +74,13 @@ body{
 
 }
 .header h1 a{
-	font-size: 6rem;
+	font-size: 7rem;
 	color: #464f54;
 	
 }
 .header h3{
 	color: 	#69666b;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-style: italic;
 	text-align: center;
 }
@@ -98,7 +100,7 @@ body{
 	margin-left: 0px;
 }
 .navbar .navbar-nav a{
-	margin-left: 40px;
+	margin-left: 50px;
 	color: #f6f8f8;
 }
 
@@ -108,7 +110,7 @@ body{
 }
 .aboutContainer h1{
 	font-size: 5rem;
-	margin: 50px 50px 50px 10px;
+	margin: 50px 50px 40px 10px;
 }
 .aboutContainer ul{
 	line-height: 2;
