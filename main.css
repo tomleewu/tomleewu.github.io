@@ -180,10 +180,10 @@ body{
 .projectContainer .row{
 	margin-top: 25px;
 }
-.link{
+#link{
 	color: /*#afceff*/#cedfff !important;
 }
-.link:hover{
+#link:hover{
 	text-decoration: none;
 	color: #8095b7;
 }
