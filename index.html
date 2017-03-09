@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Tom Wu</title>
-
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script rel="script" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,13 +13,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<!-- External CSS -->
 		<link rel="stylesheet" href="main.css">
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+		<!-- fotorama.css & fotorama.js. -->
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 		<script rel="script" src="main.js"></script>
 
 	</head>
 	<body>
-		
 		<div class="page-container">
 			<div class="background-image-header">
 			<div class="header">
@@ -60,9 +62,8 @@
 							</div>
 							<div class="col-md-10">
 								<ul class="white-text">
-								<li>I'm a freshman computer science major at the University of Tulsa.</li>
-								<li>At TU, I'm researching a multi-agent system involving sympathy, parity, and reciprocity in a Prisoner's Dilemma situation.</li>
-								<li>I love lattes and frequent coffee shops.</li>
+								<li>I'm a sophomore computer science major at the University of Tulsa.</li>
+								<li>I love coffee + tea and frequent coffee shops.</li>
 								<li>I enjoy taking pictures of people. Check them out <a href="http://www.flickr.com/ponderingpandaphoto">here.</a></li>
 								</ul>
 							</div>
@@ -75,22 +76,34 @@
 
 
 
-		<div class="page-container" id="projects">
+		<div class="page-container-bottom" id="projects">
 			<div><div class="background-image-project"></div><div>
 			<div class="container">
 				<div class="projectContainer">
 					<h1 class="white-text">My Projects</h1>
 					<div class="row">
-						<div class="col-md-7 projectImage white-text">
+						<div class="col-md-9 projectImage white-text">
+							<h2>OtterGrader</h2>
+							<p>Autmatically generate and grade true/false tests</p>
+							<div class="fotorama" data-autoplay="2500" data-stopautoplayontouch="true" data-loop="true">
+							<img class="otter-grader" data-caption="Generated T/F test" src="Otter_Quiz.PNG" height="450px">
+							<img class="otter-grader" data-caption="Fill in the test!" src="Otter_Quiz_filled.png" height="450px">
+							<img class="otter-grader" data-caption="Grab a picture of the answer box!" src="sample-test.jpg" height="450px">
+							<img class="otter-grader" data-caption="Upload to OtterGrader!" src="Graded.PNG" height="450px">
+							</div>
+
+						</div>	
+						<div class="col-md-3 projectImage white-text imghover">
 							<h2>Happy Wallet</h2>
 							<p>An easy-to-use monthly budgeting app</p>
 							<a href="https://github.com/nihaal419/Happy-Wallet"><img src="happywalletSS.png" height="450px"></a>
 						</div>
-						<div class="col-md-5 projectImage white-text">
-							<h2>Echo Math</h2>
-							<p>Enable Amazon Echo to search on Wolfram Alpha!</p>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/4G9VEEB0uOE" frameborder="0" allowfullscreen></iframe>
-						</div>	
+<!-- 						<div class="col-md-4 projectImage white-text">
+	<h2>Echo Math</h2>
+	<p>Enable Amazon Echo to search on Wolfram Alpha!</p>
+	<iframe width="280" height="152" src="https://www.youtube.com/embed/4G9VEEB0uOE" frameborder="0" allowfullscreen></iframe>
+</div> -->
+
 					</div>
 				</div>
 			</div>

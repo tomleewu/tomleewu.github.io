@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 	//Smooth scroll to about section
 	$("#aboutScroll").click(function() {
     $('html, body').animate({
@@ -16,5 +15,6 @@ $(document).ready(function(){
     }, 1100);
     return false;
 	});
+
 
 });
