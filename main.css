@@ -181,7 +181,7 @@ body{
 	margin-top: 25px;
 }
 .link{
-	color: /*#afceff*/#cedfff;
+	color: /*#afceff*/#cedfff !important;
 }
 .link:hover{
 	text-decoration: none;
