@@ -23,6 +23,7 @@ body{
 .page-container{
 	height: 50% !important;
 	width: 100% !important;
+
 }
 
 .page-container-bottom{
@@ -55,7 +56,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
-
 }
 
 .background-image-header{
@@ -65,9 +65,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 55%;
-
+		padding-top: 15px;
 }​
-
+h1{
+}
  /* Header text */
 .header h1{
 	text-align: center;
