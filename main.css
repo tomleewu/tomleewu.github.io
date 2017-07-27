@@ -67,20 +67,16 @@ body{
     background-position: 50% 55%;
 
 }​
- /* Header text */
-.header{
 
-}
+ /* Header text */
 .header h1{
 	text-align: center;
 	margin-top: 0;
-
 }
 .header h1 a{
 	font-size: 7rem;
 	/*color: #464f54;*/
 	color: #1f3c40;
-
 }
 .header h3{
 	color: 	#1f3c40;
@@ -91,12 +87,12 @@ body{
 .header #tom{
 	color: #004b79;
 }
+
 /* Social Media Icons */
 .social-buttons{
 	text-align: center;
 	margin-top: 35px;
 	margin-bottom: -15px;
-
 }
 .social-buttons a{
 	margin-left: 25px;
@@ -109,7 +105,6 @@ body{
 .social-buttons span{
 	margin-top: -14px;
 }
-
 .social-buttons #github:hover{
 	color: #4078c0;
 }
@@ -120,8 +115,6 @@ body{
 	color: #ff0084;
 }
 
-
-
 /* Navbar */
 .navbar-wrapper{
 	margin-top: 50px;
@@ -131,7 +124,6 @@ body{
     display: inline-block;
     float: none;
 }
-
 .navbar .navbar-nav a:first-child{
 	margin-left: 0px;
 }
@@ -152,8 +144,6 @@ body{
 	line-height: 2;
 	font-size: 2rem;
 	margin-top: 10px;
-}
-.aboutContainer ul a{
 	color: #B0B2A6;
 }
 .round-image{
@@ -163,7 +153,6 @@ body{
 }
 
 /* Project page! */
-
 .projectContainer{
 	position: absolute;
 }
