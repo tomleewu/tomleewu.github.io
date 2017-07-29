@@ -49,10 +49,10 @@ body{
     height: 100%;
     background:
     	linear-gradient(
-    		rgba(0,0,0,.75),
+    		rgba(0,0,0,.30),
     		rgba(255,255,255,0)
     		),
-    	url("static/coffee.jpg");
+    	url("static/beach.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -145,7 +145,10 @@ h1{
 	line-height: 2;
 	font-size: 2rem;
 	margin-top: 10px;
-	color: #B0B2A6;
+	color: #d9dbcd;
+}
+.aboutContainer a{
+	color: #d1c742;
 }
 .round-image{
 	border-radius: 100px;
