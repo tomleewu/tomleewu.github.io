@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<title>Tom Wu</title>
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script rel="script" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,91 +11,24 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<!-- External CSS -->
 		<link rel="stylesheet" href="main.css">
-		<!-- fotorama.css & fotorama.js. -->
-		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 		<script rel="script" src="main.js"></script>
 
 	</head>
 	<body>
-		<div class="page-container">
-			<div class="background-image-header">
+        <div class="background-image-header">
 			<div class="header">
-				<h1><a href="">Welcome!</a></h1>
+				<h1><a href="#">Welcome!</a></h1>
 				<h3>My name is <span id="tom">Tom.</span></h3>
+                    <!-- Profile image -->
+                    <img src="static/me_outside.jpg" class="round-image" width="200px">
+
 					<div class="social-buttons">
 						<a href="http://www.github.com/tomleewu" id="github"><i class="fa fa-github fa-2x"></i></a>
 						<a href="http://www.linkedin.com/in/tomleewu" id="linkedin">
 						<span class="fa-stack icon-linkedin"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-inverse fa-linkedin fa-stack-1x"></i></span></a>
 						<a href="http://www.flickr.com/ponderingpandaphoto" id="flickr"><i class="fa fa-flickr fa-2x"></i></a>
 					</div>
-					<div class="navbar-wrapper">
-						<nav class="navbar">
-
-							<div class="nav navbar-nav">
-								<a href="">Home</a>
-								<a href="#about" id="aboutScroll">About</a>
-								<a href="#projects" id="projectScroll">Projects</a>
-								<a href="Resume.pdf">Resume</a>
-							</div>
-						</nav>
-					</div>
 			</div>
-			</div>
-		</div>
-
-		<div class="page-container">
-			<div class="background-image-about"></div>
-				<div class="container" id="about">
-					<div class="aboutContainer">
-						<div class="row">
-						<h1 class="white-text">Who is Tom Lee Wu?</h1>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-							<img src="static/me_outside.jpg" class="round-image" width="200px">
-							</div>
-							<div class="col-md-9">
-								<ul >
-								<li>A sophomore CS major at the University of Tulsa.</li>
-								<li>An undergraduate researcher in the <a href="https://secon.utulsa.edu/">Security Economics Lab </a>at University of Tulsa.</li>
-								<li>A regular at local coffee shops. (Check out <a href="https://www.claritycoffee.com/" >Clarity Coffee</a>)</li>
-								<li>A photography hobbyist, see photos  <a href="http://www.flickr.com/ponderingpandaphoto">here.</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-		</div>
-
-		<div class="page-container-bottom" id="projects">
-			<div><div class="background-image-project"></div><div>
-			<div class="container">
-				<div class="projectContainer">
-					<h1 class="white-text">My Projects</h1>
-					<div class="row">
-						<div class="col-md-9 projectImage white-text">
-							<h2>OtterGrader</h2>
-							<a href="http://github.com/tomleewu/otter-grader" id="link"><p>Autmatically generate and grade true/false tests<br></p></a>
-							<div class="fotorama" data-autoplay="2500" data-stopautoplayontouch="true" data-loop="true" data-width="750px" data-height="450px">
-							<img class="otter-grader" data-caption="Generated T/F test" src="static/Otter_Quiz.PNG" height="450px">
-							<img class="otter-grader" data-caption="Fill in the test!" src="static/Otter_Quiz_filled.png" height="450px">
-							<img class="otter-grader" data-caption="Grab a picture of the answer box!" src="static/sample-test.jpg" height="450px">
-							<img class="otter-grader" data-caption="Upload to OtterGrader!" src="static/Graded.PNG" height="450px">
-							</div>
-						</div>
-						<div class="col-md-3 projectImage white-text imghover">
-							<h2>Happy Wallet</h2>
-							<a href="http://github.com/nihaal419/Happy-Wallet" id="link"><p>An easy-to-use monthly budgeting app</p></a>
-							<a href="https://github.com/nihaal419/Happy-Wallet"><img src="static/happywalletSS.png" height="450px"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+        </div>
 	</body>
 </html>
