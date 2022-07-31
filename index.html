@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Tom Wu</title>
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script rel="script" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-		<!-- Google Font: Raleway -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<!-- External CSS -->
-		<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
-    <div class="background-image-header">
-			<div class="header">
-				<h1><a href="#">Welcome!</a></h1>
-				<h3>My name is <span id="tom">Tom.</span></h3>
-          <!-- Profile image -->
-          <img src="static/me_outside.jpg" class="round-image" width="200px">
-					<div class="social-buttons">
-						<a href="http://www.github.com/tomleewu" id="github"><i class="fab fa-github fa-2x"></i></a>
-            <a href="http://www.linkedin.com/in/tomleewu" id="linkedin"><i class="fab fa-linkedin-in fa-2x"></i>
-						<a href="static/Resume.pdf" id="resume"><i class="fas fa-file-alt fa-2x"></i></a>
-					</div>
-			</div>
-    </div>
-	</body>
+<html lang="en" class="h-full">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Howdy! I'm Tom</title>
+
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<link rel="stylesheet" href="static/dist.css">
+</head>
+
+<body class="h-full">
+	<div class="bg-snow bg-cover bg-no-repeat h-full">
+		<div class="header">
+			<p class="text-center text-darkblue text-7xl py-5">Welcome!</p>
+			<p class="text-center text-darkblue text-4xl italic">My name is <span class="text-lighterblue">Tom.</span></p>
+		</div>
+
+		<div class="flex place-content-center py-5">
+			<img src="static/me_outside.jpg" class="max-w-[50%] rounded-full shadow-2xl">
+		</div>
+
+		<div class="pt-6 flex flex-row justify-center gap-x-8">
+			<a href="http://www.github.com/tomleewu" id="github" class="text-darkblue hover:text-hoverblue">
+				<i class="fab fa-github fa-2x"></i>
+			</a>
+			<a href="http://www.linkedin.com/in/tomleewu" id="linkedin" class="text-darkblue hover:text-hoverblue">
+				<i class="fab fa-linkedin-in fa-2x"></i>
+			</a>
+			<a href="static/Resume.pdf" id="resume" class="text-darkblue hover:text-hoverblue">
+				<i class="fas fa-file-alt fa-2x"></i>
+			</a>
+		</div>
+	</div>
+</body>
+
 </html>
