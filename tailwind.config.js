@@ -6,12 +6,10 @@ module.exports = {
       colors: {
         'darkblue': '#1f3c40',
         'lighterblue': '#004b79',
-        'borderwhite': '#ddf3ff',
         'hoverblue': '#4078c0',
+        'backgroundDark': '#80a3b7',
+        'backgroundLight': '#ced9df',
       },
-      backgroundImage: {
-        'snow': "url('background.jpg')",
-      }
     },
   },
   plugins: [],
