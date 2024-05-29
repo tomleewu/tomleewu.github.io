@@ -7,24 +7,46 @@
 
 	<title>Howdy! I'm Tom</title>
 
-	<!-- FontAwesome -->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Serif+JP&display=swap"
+		rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/c4796830c7.js" crossorigin="anonymous"></script>
+
+	<script>
+		var base_url = window.location.origin
+		var profileImg = base_url + "/static/photo.webp"
+		var catImg = base_url + "/static/beppi.webp"
+		var imgId = "main-image"
+
+		function changeImage() {
+			if (document.getElementById(imgId).src == profileImg) {
+				document.getElementById(imgId).src = catImg;
+			} else {
+				document.getElementById(imgId).src = profileImg;
+			}
+		}
+	</script>
 
 	<link rel="stylesheet" href="static/dist.css">
+
 </head>
 
-<body class="h-full">
-	<div class="bg-gradient-to-b from-backgroundDark to-backgroundLight h-full">
+<body>
+	<div class="bg-background h-dvh px-8">
 		<div class="header">
-			<p class="text-center text-darkblue text-7xl py-8">Welcome!</p>
-			<p class="text-center text-darkblue text-4xl italic">My name is <span class="text-lighterblue">Tom.</span></p>
+			<p class="text-center text-darkblue text-7xl font-customserif py-8">Tom Wu</p>
+			<p class="text-center text-darkblue text-4xl font-mono">
+				Coding, climbing and cats
+			</p>
 		</div>
 
-		<div class="flex place-content-center py-5">
-			<img src="static/me_outside.jpg" class="max-w-[50%] rounded-full shadow-2xl">
+		<div class="flex place-content-center py-10">
+			<img src="static/photo.webp" class="w-1/2 max-w-md rounded-full shadow-2xl" id="main-image">
 		</div>
 
-		<div class="pt-6 flex flex-row justify-center gap-x-8">
+		<div class="py-6 flex flex-row justify-center gap-x-8">
 			<a href="http://www.github.com/tomleewu" id="github"
 				class="text-darkblue transition ease-in-out hover:text-hoverblue">
 				<i class="fab fa-github fa-2x"></i>
@@ -35,6 +57,9 @@
 			</a>
 			<a href="static/Resume.pdf" id="resume" class="text-darkblue transition ease-in-out hover:text-hoverblue">
 				<i class="fas fa-file-alt fa-2x"></i>
+			</a>
+			<a id="cat" class="text-darkblue hover:text-hoverblue" onclick="changeImage()">
+				<i class="fa-solid fa-cat fa-2x"></i>
 			</a>
 		</div>
 	</div>

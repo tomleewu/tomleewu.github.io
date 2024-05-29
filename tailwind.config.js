@@ -7,8 +7,11 @@ module.exports = {
         'darkblue': '#1f3c40',
         'lighterblue': '#004b79',
         'hoverblue': '#4078c0',
-        'backgroundDark': '#80a3b7',
-        'backgroundLight': '#ced9df',
+        'background': '#f2eede',
+      },
+      fontFamily: {
+        'mono': 'JetBrains Mono',
+        'customserif': 'Noto Serif JP',
       },
     },
   },
