@@ -1,0 +1,8 @@
+exclude:
+  - 'README.md'
+  - 'main.go'
+  - 'tailwind.config.js'
+  - 'go.mod'
+  - 'go.sum'
+  - 'Makefile'
+  - 'gowatch.yml'
