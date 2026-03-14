@@ -8,10 +8,19 @@
 
 	<title>Howdy! I'm Tom</title>
 
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+	<link rel="canonical" href="https://tomleewu.com/">
+
+	<meta property="og:title" content="Howdy! I'm Tom">
+	<meta property="og:description" content="Tom Wu's personal website that contains links for GitHub, LinkedIn and a resume.">
+	<meta property="og:image" content="https://tomleewu.com/static/photo.webp">
+	<meta property="og:url" content="https://tomleewu.com/">
+	<meta name="twitter:card" content="summary_large_image">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Serif+JP&display=swap"
-		rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Serif+JP&display=swap" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Serif+JP&display=swap"></noscript>
 
 	<script src="https://kit.fontawesome.com/c4796830c7.js" crossorigin="anonymous" defer></script>
 
@@ -45,7 +54,7 @@
 
 		<div class="flex place-content-center py-10">
 			<img src="static/photo.webp" class="w-2/5 max-w-xs aspect-square object-cover rounded-full shadow-2xl" id="main-image"
-				alt="profile picture">
+				alt="profile picture" fetchpriority="high">
 		</div>
 
 		<div class="py-6 flex flex-row justify-center gap-x-8">
@@ -60,7 +69,7 @@
 			<a href="static/Resume.pdf" id="resume" class="text-darkblue transition ease-in-out hover:text-hoverblue">
 				<i class="fas fa-file-alt fa-2x"></i>
 			</a>
-			<a id="cat" class="text-darkblue hover:text-hoverblue" onclick="changeImage()">
+			<a id="cat" class="text-darkblue hover:text-hoverblue" onclick="changeImage()" aria-label="Toggle between profile and cat photo">
 				<i class="fa-solid fa-cat fa-2x"></i>
 			</a>
 		</div>
