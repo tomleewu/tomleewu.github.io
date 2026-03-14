@@ -1,3 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-darkblue: #1f3c40;
+  --color-lighterblue: #004b79;
+  --color-hoverblue: #4078c0;
+  --color-background: #f2eede;
+
+  --font-mono: 'JetBrains Mono';
+  --font-customserif: 'Noto Serif JP';
+}
