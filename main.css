@@ -6,6 +6,99 @@
   --color-hoverblue: #4078c0;
   --color-background: #f2eede;
 
-  --font-mono: 'JetBrains Mono';
-  --font-customserif: 'Noto Serif JP';
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-customserif: 'Noto Serif JP', Georgia, serif;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--color-background);
+  color: var(--color-darkblue);
+  font-family: var(--font-mono);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 52rem;
+  min-height: 100dvh;
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 4rem) 1rem 2rem;
+  text-align: center;
+}
+
+.profile-header h1 {
+  font-family: var(--font-customserif);
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  line-height: 1.2;
+}
+
+.tagline {
+  max-width: 26ch;
+  margin-top: 1rem;
+  font-size: clamp(1.125rem, 3.5vw, 2.25rem);
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.portrait {
+  width: clamp(14rem, 38vw, 20rem);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-block: clamp(2rem, 5vw, 3rem) 1.5rem;
+  box-shadow: 0 12px 28px -12px rgb(31 60 64 / 35%);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem clamp(.5rem, 3vw, 2rem);
+}
+
+.profile-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: .75rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-underline-offset: .25em;
+}
+
+.profile-links svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.cat-toggle {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  margin-top: 1rem;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  font-size: .875rem;
+  text-decoration: underline;
+  text-underline-offset: .25em;
+  cursor: pointer;
+}
+
+.profile-links a:hover,
+.cat-toggle:hover {
+  color: var(--color-lighterblue);
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
