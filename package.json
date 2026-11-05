@@ -1,6 +1,17 @@
 {
+  "name": "tomleewu.github.io",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tailwindcss -i main.css -o static/dist.css --minify && node scripts/version-css.mjs",
+    "dev": "node scripts/dev.mjs",
+    "preview": "python3 -m http.server 8080 --bind 127.0.0.1"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.2.1"
   }
 }
